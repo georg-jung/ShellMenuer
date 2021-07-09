@@ -171,6 +171,13 @@ csharp_preserve_single_line_statements = true
 csharp_preserve_single_line_blocks = true
 
 ## Naming conventions
+
+# SA1101: Prefix local calls with this
+dotnet_diagnostic.SA1101.severity = none
+
+# SA1309: Field names should not begin with underscore
+dotnet_diagnostic.SA1309.severity = none
+
 [*.{cs,vb}]
 
 ## Naming styles
