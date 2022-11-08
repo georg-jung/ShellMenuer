@@ -43,7 +43,7 @@ namespace ShellStaticContextMenuManager.Persistance
         }
 
         /// <inheritdoc/>
-        public void EnsureDeleted(IReadOnlyCollection<Class> classes, bool skipChecks)
+        public void EnsureDeleted(IReadOnlyCollection<Class> classes)
         {
             EnsureClassesValid(classes);
 

@@ -20,6 +20,6 @@ namespace ShellStaticContextMenuManager.Persistance
         /// Ensures the <see cref="Verb"/>s and <see cref="VerbCollection"/>s of the given <see cref="Class"/>es don't exist in this store.
         /// </summary>
         /// <param name="classes">Collection of classes for which <see cref="Verb"/>s and <see cref="VerbCollection"/>s should not exist.</param>
-        public void EnsureDeleted(IReadOnlyCollection<Class> classes, bool skipChecks);
+        public void EnsureDeleted(IReadOnlyCollection<Class> classes);
     }
 }
