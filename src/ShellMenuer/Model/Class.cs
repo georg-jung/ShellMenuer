@@ -6,9 +6,8 @@ using System.Text;
 namespace ShellMenuer.Model
 {
     /// <summary>
-    /// Model for a registry class, that models the <see cref="Verb"/>s for this class as well as the
-    /// <see cref="VerbCollection"/>s that are kept below this classes key. A class can be e.g.
-    /// "*", "Directory", "txtfile, ".txt", ".log".
+    /// Model for a registry class, that models the <see cref="Verb"/>s for this class. A class can be e.g.
+    /// "*", "Directory", "Directory\Background", "image", ".txt", ".log".
     /// </summary>
     public class Class
     {
@@ -30,11 +29,5 @@ namespace ShellMenuer.Model
         /// Gets a collection of the <see cref="Verb"/>s that are associated with this class.
         /// </summary>
         public ICollection<Verb> Verbs { get; } = new List<Verb>();
-
-        /// <summary>
-        /// Gets an enumarable version of the <see cref="VerbCollection"/>s that are children of
-        /// <see cref="CascadingVerb"/>s that are elements of the <see cref="Verbs"/> property.
-        /// </summary>
-        public IEnumerable<VerbCollection> VerbCollections => Verbs.OfType<CascadingVerb>().Select(c => c.Children);
     }
 }

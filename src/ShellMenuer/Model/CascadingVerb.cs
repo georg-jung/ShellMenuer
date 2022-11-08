@@ -14,8 +14,18 @@ namespace ShellMenuer.Model
         /// </summary>
         /// <param name="name">The value for the <see cref="Verb.Name"/> property.</param>
         /// <param name="muiVerb">The value for the <see cref="Verb.MuiVerb"/> property.</param>
+        public CascadingVerb(string name, string muiVerb)
+            : this(name, muiVerb, new List<Verb>())
+        {
+        }
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="CascadingVerb"/> class.
+        /// </summary>
+        /// <param name="name">The value for the <see cref="Verb.Name"/> property.</param>
+        /// <param name="muiVerb">The value for the <see cref="Verb.MuiVerb"/> property.</param>
         /// <param name="children">The value for the <see cref="Children"/> property.</param>
-        public CascadingVerb(string name, string muiVerb, VerbCollection children)
+        public CascadingVerb(string name, string muiVerb, ICollection<Verb> children)
             : base(name, muiVerb)
         {
             Children = children;
@@ -24,6 +34,6 @@ namespace ShellMenuer.Model
         /// <summary>
         /// Gets the collection of child verb items that appear when this menu item is selected.
         /// </summary>
-        public VerbCollection Children { get; }
+        public ICollection<Verb> Children { get; }
     }
 }

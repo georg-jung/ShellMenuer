@@ -6,12 +6,12 @@ namespace ShellMenuer.Tests
 
         public NodeVerbs()
         {
-            _verbs.Add(new("cmd3", "Open cmd here", "cmd \"%1\"")
+            _verbs.Add(new("ShellMenuer.cmd3", "Open cmd here", "cmd \"%1\"")
             {
                 Icon = "cmd.exe",
             });
 
-            _verbs.Add(new("cmd2", "Open cmd here (Extended)", "cmd \"%1\"")
+            _verbs.Add(new("ShellMenuer.cmd2", "Open cmd here (Extended)", "cmd \"%1\"")
             {
                 Icon = "cmd.exe",
                 Extended = true,
@@ -19,19 +19,19 @@ namespace ShellMenuer.Tests
         }
 
         [Fact]
-        public void CreateForDirectories()
+        public void ForFiles()
         {
-            var cls = new Class("Directory");
-            _verbs.ForEach(x => cls.Verbs.Add(x));
-            ShellMenu.EnsureCreated(cls, false);
+            ShellMenu.EnsureCreated(ShellMenuScope.FileItems, _verbs, false);
+
+            ShellMenu.EnsureDeleted(ShellMenuScope.FileItems, _verbs, false);
         }
 
         [Fact]
-        public void DeleteForDirectories()
+        public void ForDirectories()
         {
-            var cls = new Class("Directory");
-            _verbs.ForEach(x => cls.Verbs.Add(x));
-            ShellMenu.EnsureDeleted(cls, false);
+            ShellMenu.EnsureCreated(ShellMenuScope.DirectoryItems, _verbs, false);
+
+            ShellMenu.EnsureDeleted(ShellMenuScope.DirectoryItems, _verbs, false);
         }
     }
 }
