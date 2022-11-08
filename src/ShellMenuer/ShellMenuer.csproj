@@ -2,6 +2,21 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <PackageId>ShellMenuer</PackageId>
+    <Authors>Georg Jung</Authors>
+    <!-- enable as soon as possible
+    <EnablePackageValidation>true</EnablePackageValidation>
+    <PackageValidationBaselineVersion>0.1.3</PackageValidationBaselineVersion>
+    -->
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <PackageProjectUrl>https://github.com/georg-jung/ShellMenuer</PackageProjectUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <PackageDescription>Easily create Windows Explorer Shell Context Menu items using .Net. Does not require elevation, installation or COM server registration. Supports cascading menus.</PackageDescription>
+    <PackageTags>shell;explorer;menu;context-menu;windows-explorer;cascading;file-explorer;registry</PackageTags>
+    <RepositoryType>git</RepositoryType>
   </PropertyGroup>
 
   <ItemGroup>
