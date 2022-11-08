@@ -60,7 +60,7 @@ namespace ShellMenuer.Persistance
                 var vrbStore = new RegistryVerbStore(clsKey, cls.Identifier);
                 foreach (var verb in cls.Verbs)
                 {
-                    vrbStore.EnsureCreated(verb);
+                    vrbStore.EnsureDeleted(verb);
                 }
             }
         }

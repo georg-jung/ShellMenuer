@@ -65,7 +65,7 @@ namespace ShellMenuer
         private static RegistryKey OpenClasses(bool machineWide)
         {
             var root = machineWide ? Registry.LocalMachine : Registry.CurrentUser;
-            return root.OpenSubKey(@"SOFTWARE\Classes")
+            return root.OpenSubKey(@"SOFTWARE\Classes", true)
                 ?? throw new InvalidOperationException("Classes registry key could not be opened.");
         }
     }
