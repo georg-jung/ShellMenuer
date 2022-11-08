@@ -31,6 +31,10 @@
                 Icon = "notepad.exe",
                 Extended = true,
             });
+
+            // This kind of works, it might not be a great idea though
+            // Should we block it?
+            // vrbs.Add(new CascadingVerb("cscLoop", "Infinite Loop", vrbs));
         }
 
         [Fact]
