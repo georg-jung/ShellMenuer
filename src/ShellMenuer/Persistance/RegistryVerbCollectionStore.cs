@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using System.Text;
 using Microsoft.Win32;
-using ShellStaticContextMenuManager.Model;
+using ShellMenuer.Model;
 
-namespace ShellStaticContextMenuManager.Persistance
+namespace ShellMenuer.Persistance
 {
     internal class RegistryVerbCollectionStore : IVerbCollectionStore
     {

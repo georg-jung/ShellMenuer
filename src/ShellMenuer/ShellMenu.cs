@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 using Microsoft.Win32;
-using ShellStaticContextMenuManager.Persistance;
+using ShellMenuer.Persistance;
 
-namespace ShellStaticContextMenuManager
+namespace ShellMenuer
 {
     /// <summary>
     /// Enables you to create or remove (cascading) Windows Explorer Context Menu entries. See also

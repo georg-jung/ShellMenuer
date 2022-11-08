@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using ShellStaticContextMenuManager.Model;
+using ShellMenuer.Model;
 
-namespace ShellStaticContextMenuManager.Persistance
+namespace ShellMenuer.Persistance
 {
     /// <summary>
     /// Manages persisting <see cref="Verb"/>s.

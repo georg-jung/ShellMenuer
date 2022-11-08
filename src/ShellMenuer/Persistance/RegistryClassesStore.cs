@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Microsoft.Win32;
-using ShellStaticContextMenuManager.Model;
+using ShellMenuer.Model;
 
-namespace ShellStaticContextMenuManager.Persistance
+namespace ShellMenuer.Persistance
 {
     /// <summary>
     /// Manages persistence of <see cref="Verb"/>s and <see cref="VerbCollection"/>s for <see cref="Class"/>es in Windows' Registry.

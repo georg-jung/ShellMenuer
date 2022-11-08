@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Text;
 
-namespace ShellStaticContextMenuManager.Model
+namespace ShellMenuer.Model
 {
     /// <summary>
     /// Holds a collection of <see cref="Verb"/> instances and the relative path where they should be kept.

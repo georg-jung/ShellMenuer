@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace ShellStaticContextMenuManager.Model
+namespace ShellMenuer.Model
 {
     /// <summary>
     /// Model for a verb that cascades, thus, shows child items in a submenu when selected.

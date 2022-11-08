@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace ShellStaticContextMenuManager.Model
+namespace ShellMenuer.Model
 {
     /// <summary>
     /// Abstract model for a verb, representing a context menu item.

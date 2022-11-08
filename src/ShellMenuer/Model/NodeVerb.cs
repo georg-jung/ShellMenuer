@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace ShellStaticContextMenuManager.Model
+namespace ShellMenuer.Model
 {
     /// <summary>
     /// Model for a verb that represents some clickable action on a file or a folder.
